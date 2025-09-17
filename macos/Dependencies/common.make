@@ -173,7 +173,7 @@ $(DOWNLOADS)/libpng/Makefile: $(DOWNLOADS)/libpng/configure
 	--enable-shared=no --enable-static=yes
 
 $(DOWNLOADS)/libpng/configure:
-	$(CLONE) $(GITHUB)/exentio/libpng $(DOWNLOADS)/libpng
+	$(CLONE) $(GITHUB)/exentio/libpng $(DOWNLOADS)/libpng \ 
     cd $(DOWNLOADS)/libpng; \
 	git checkout macos_build_fix
 
