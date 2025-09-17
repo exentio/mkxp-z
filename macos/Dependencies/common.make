@@ -174,7 +174,7 @@ $(DOWNLOADS)/libpng/Makefile: $(DOWNLOADS)/libpng/configure
 
 $(DOWNLOADS)/libpng/configure:
 	$(CLONE) $(GITHUB)/exentio/libpng $(DOWNLOADS)/libpng \ 
-    cd $(DOWNLOADS)/libpng; \
+	cd $(DOWNLOADS)/libpng; \
 	git checkout macos_build_fix
 
 # SDL2
