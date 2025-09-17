@@ -173,9 +173,7 @@ $(DOWNLOADS)/libpng/Makefile: $(DOWNLOADS)/libpng/configure
 	--enable-shared=no --enable-static=yes
 
 $(DOWNLOADS)/libpng/configure:
-	$(CLONE) $(GITHUB)/exentio/libpng $(DOWNLOADS)/libpng; \ 
-	cd $(DOWNLOADS)/libpng; \
-	git checkout macos_build_fix
+	$(CLONE) $(GITHUB)/exentio/libpng $(DOWNLOADS)/libpng -b macos_build_fix 
 
 # SDL2
 sdl2: init_dirs $(LIBDIR)/libSDL2.a
