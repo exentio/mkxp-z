@@ -3,7 +3,7 @@ name: Automatic Build
 
 on:
   push:
-    branches: ['dev', 'autobuild']
+    branches: ['dev', 'autobuild', 'macos_build_fix']
     paths-ignore: ['*.md', '*.json', '*.png']
   pull_request:
     branches: ['dev', 'autobuild']
